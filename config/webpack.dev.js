@@ -5,12 +5,16 @@ const { merge } = require("webpack-merge");
 
 const devConfig = {
   mode: "development",
+  output: {
+    publicPath: "/",
+  },
   devServer: {
     port: 3000,
     static: "../dist",
     compress: true,
     open: true,
     hot: true,
+    historyApiFallback: true,
   },
   target: "web",
   plugins: [new ReactRefreshWebpackPlugin()].filter(Boolean),

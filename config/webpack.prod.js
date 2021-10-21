@@ -5,6 +5,9 @@ const { merge } = require("webpack-merge");
 
 const prodConfig = {
   mode: "production",
+  output: {
+    publicPath: "./",
+  },
   devtool: "source-map",
   optimization: {
     splitChunks: {
