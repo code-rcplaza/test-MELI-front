@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import SearchBar from "./components/SearchBar";
+import "./App.css";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -7,22 +9,17 @@ const App = () => {
   return (
     <Router>
       <header>
-        <h1>Mercado Libre</h1>
-        <Link to="/">Home</Link>
-        <Link to="/adad">About</Link>
-        <Link to="/users">Users</Link>
+        <SearchBar />
       </header>
       <main>
         <Switch>
-          <Route exact path="/adad">
+          <Route exact path="/items">
             <About />
           </Route>
           <Route exact path="/users">
             <Users />
           </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route exact path="/"></Route>
           <Route path="/">404 - Not Found</Route>
         </Switch>
       </main>

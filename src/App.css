@@ -1,9 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
+:root {
+  --color-yellow: #ffe600;
+  --color-gray: #999999;
+  --color-dodger-blue: #3483fa;
+  --color-medium-gray: #666666;
+  --color-light-gray: #eeeeee;
+  --color-dark-gray: #333333;
 }
 
-.container {
-  background: url("./Assets/bg-yellow.jpeg") no-repeat;
-  height: 100vh;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
 }
