@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
+import Image from "./../Image";
 import "./SearchBar.css";
-import logo from "../../assets/Logo_ML.png";
-import iconSearch from "../../assets/ic_Search.png";
 
-const SearchBar = () => {
+const SearchBar = ({ URLBrand, URLIcon }) => {
   let history = useHistory();
   const [searchText, setSearchText] = useState("");
 
@@ -19,7 +19,7 @@ const SearchBar = () => {
     <div className="search-bar">
       <form className="search-bar-body">
         <Link className="search-bar-logo" to="/">
-          <img className="brand" src={logo} alt="logo" />
+          <Image URLImage={URLBrand} type="brand" />
         </Link>
         <input
           className="search-bar-input"
@@ -33,10 +33,16 @@ const SearchBar = () => {
           type="submit"
           onClick={handleSubmit}
         >
-          <img src={iconSearch} />
+          <Image URLImage={URLIcon} type="icon" />
         </button>
       </form>
     </div>
   );
 };
+
+SearchBar.propTypes = {
+  URLBrand: PropTypes.string.isRequired,
+  URLIcon: PropTypes.string.isRequired,
+};
+
 export default SearchBar;
