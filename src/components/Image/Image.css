@@ -1,11 +1,3 @@
-:root {
-  --size-icon: 12px;
-  --size-brand-w: 53px;
-  --size-brand-h: 32px;
-  --size-result-image: 180px;
-  --size-detail-image: 680px;
-}
-
 .image {
   border: 1px solid transparent;
 }
@@ -21,8 +13,10 @@
 
 .type-details {
   width: var(--size-detail-image);
+  margin: var(--size-sm-margin);
 }
 
 .type-result {
   width: var(--size-result-image);
+  margin: var(--size-sm-margin);
 }
