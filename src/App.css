@@ -12,6 +12,12 @@
   margin: 0px;
 }
 
-body {
-  width: 100%;
+.layout {
+  display: grid;
+  --column-gap: 16px;
+  --row-gap: 16px;
+  grid-template-columns: 65px repeat(10, 1fr) 50px;
+  grid-template-rows: repeat(11, 1fr);
+  width: 70%;
+  margin: 0 auto;
 }

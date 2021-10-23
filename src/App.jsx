@@ -4,25 +4,25 @@ import SearchBar from "./components/SearchBar";
 import "./App.css";
 
 const App = () => {
-  const [text, setText] = useState("");
-
   return (
     <Router>
       <header>
         <SearchBar />
       </header>
-      <main>
-        <Switch>
-          <Route exact path="/items">
-            <About />
-          </Route>
-          <Route exact path="/users">
-            <Users />
-          </Route>
-          <Route exact path="/"></Route>
-          <Route path="/">404 - Not Found</Route>
-        </Switch>
-      </main>
+      <div className="layout">
+        <main>
+          <Switch>
+            <Route exact path="/items">
+              <About />
+            </Route>
+            <Route exact path="/users">
+              <Users />
+            </Route>
+            <Route exact path="/"></Route>
+            <Route path="/">404 - Not Found</Route>
+          </Switch>
+        </main>
+      </div>
     </Router>
   );
 };

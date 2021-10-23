@@ -18,8 +18,8 @@ const SearchBar = () => {
   return (
     <div className="search-bar">
       <form className="search-bar-body">
-        <Link to="/">
-          <img src={logo} alt="logo" />
+        <Link className="search-bar-logo" to="/">
+          <img className="brand" src={logo} alt="logo" />
         </Link>
         <input
           className="search-bar-input"
