@@ -23,6 +23,7 @@
 
 main {
   background-color: var(--color-light-gray);
+  min-height: 100vh;
 }
 
 .layout {
