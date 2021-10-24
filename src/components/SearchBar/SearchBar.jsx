@@ -6,6 +6,7 @@ import "./SearchBar.css";
 
 const SearchBar = ({ URLBrand, URLIcon }) => {
   let history = useHistory();
+
   const [searchText, setSearchText] = useState("");
 
   const handleChange = ({ target }) => setSearchText(target.value);
@@ -13,6 +14,7 @@ const SearchBar = ({ URLBrand, URLIcon }) => {
   const handleSubmit = (e) => {
     searchText.trim() !== "" && history.push(`/items?search=${searchText}`);
     e.preventDefault();
+    setSearchText("");
   };
 
   return (

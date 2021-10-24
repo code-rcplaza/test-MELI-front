@@ -13,10 +13,11 @@
 
 .type-details {
   width: var(--size-detail-image);
-  margin: var(--size-sm-margin);
+  height: var(--size-detail-image);
 }
 
 .type-result {
   width: var(--size-result-image);
-  margin: var(--size-sm-margin);
+  height: var(--size-result-image);
+  border-radius: 4px;
 }

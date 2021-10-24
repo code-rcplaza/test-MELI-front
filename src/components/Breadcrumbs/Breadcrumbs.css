@@ -1,0 +1,11 @@
+.breadcrumbs {
+  padding-top: var(--size-sm-margin);
+  padding-bottom: var(--size-sm-margin);
+  background-color: var(--color-light-gray);
+}
+
+.breadcrumb {
+  color: var(--color-gray);
+  font-size: 14px;
+  padding-right: 12px;
+}

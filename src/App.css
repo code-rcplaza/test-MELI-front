@@ -23,15 +23,11 @@
 
 main {
   background-color: var(--color-light-gray);
-  height: 100vh;
 }
 
 .layout {
   display: grid;
-  --column-gap: 16px;
-  --row-gap: 16px;
   grid-template-columns: 1fr 65px repeat(8, 1fr) 50px 1fr;
-  grid-template-rows: repeat(11, 1fr);
   width: 80%;
   margin: 0 auto;
 }
@@ -40,4 +36,5 @@ main {
   grid-column-start: 2;
   grid-column-end: 12;
   background-color: var(--color-white);
+  margin-bottom: calc(2 * var(--size-md-margin));
 }
